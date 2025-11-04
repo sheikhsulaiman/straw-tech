@@ -8,7 +8,7 @@ import Contact from "@/pages/Contact";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/straw-tech">
       <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="grow">
