@@ -11,6 +11,7 @@ This method automatically deploys your site whenever you push to the main branch
 #### Step 1: Push Your Code to GitHub
 
 1. **Create a new repository on GitHub**
+
    - Go to https://github.com/new
    - Name it something like `strawtech-website` or `straw-use`
    - Keep it public (required for free GitHub Pages)
@@ -45,11 +46,13 @@ This method automatically deploys your site whenever you push to the main branch
 If you prefer manual control over deployments:
 
 1. **Build and deploy manually**
+
    ```bash
    pnpm run deploy
    ```
 
 2. **Enable GitHub Pages**
+
    - Go to repository Settings → Pages
    - Under Source, select branch: `gh-pages`
    - Click Save
@@ -62,17 +65,22 @@ If you prefer manual control over deployments:
 ## 🔧 Configuration Files Created
 
 ### 1. `vite.config.ts`
+
 Updated with `base: './'` for relative paths - this ensures all assets load correctly on GitHub Pages.
 
 ### 2. `package.json`
+
 Added deployment scripts:
+
 ```json
 "predeploy": "pnpm run build",
 "deploy": "gh-pages -d dist"
 ```
 
 ### 3. `.github/workflows/deploy.yml`
+
 GitHub Actions workflow that automatically:
+
 - Installs dependencies
 - Builds your project
 - Deploys to GitHub Pages
@@ -82,14 +90,17 @@ GitHub Actions workflow that automatically:
 ## 📝 Important Notes
 
 ### Custom Domain (Optional)
+
 If you want to use a custom domain:
 
 1. Add a `public/CNAME` file with your domain:
+
    ```
    www.yourdomain.com
    ```
 
 2. Configure DNS with your domain provider:
+
    - Add a CNAME record pointing to `YOUR_USERNAME.github.io`
    - Or use A records pointing to GitHub's IPs
 
@@ -98,15 +109,17 @@ If you want to use a custom domain:
 ### Base URL Configuration
 
 **If your site is at root** (e.g., with custom domain):
+
 ```typescript
 // vite.config.ts
-base: '/'
+base: "/";
 ```
 
 **If using GitHub Pages subdirectory** (current setup):
+
 ```typescript
 // vite.config.ts
-base: './' // Already configured!
+base: "./"; // Already configured!
 ```
 
 ### React Router and GitHub Pages
@@ -115,22 +128,24 @@ GitHub Pages doesn't support client-side routing by default. If you get 404 erro
 
 **Solution 1: Hash Router (Simplest)**
 Update `src/App.tsx`:
+
 ```tsx
-import { HashRouter as Router } from "react-router-dom"
+import { HashRouter as Router } from "react-router-dom";
 // Instead of: import { BrowserRouter as Router }
 ```
 
 **Solution 2: 404 Fallback**
 Create `public/404.html` that redirects to `index.html`:
+
 ```html
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <script>
       sessionStorage.redirect = location.href;
     </script>
-    <meta http-equiv="refresh" content="0;URL='/'">
+    <meta http-equiv="refresh" content="0;URL='/'" />
   </head>
 </html>
 ```
@@ -140,17 +155,21 @@ Create `public/404.html` that redirects to `index.html`:
 ## 🛠️ Troubleshooting
 
 ### Assets Not Loading
+
 **Issue**: Images, CSS, or JS files show 404 errors
 
-**Solution**: 
+**Solution**:
+
 - Verify `base: './'` in `vite.config.ts`
 - Make sure images are in the `public` folder
 - Clear browser cache and hard refresh (Ctrl+Shift+R)
 
 ### Build Fails
+
 **Issue**: GitHub Actions workflow fails
 
 **Solution**:
+
 ```bash
 # Test build locally first
 pnpm run build
@@ -160,14 +179,17 @@ pnpm run lint
 ```
 
 ### Page Shows Old Version
+
 **Issue**: Changes don't appear after deployment
 
 **Solution**:
+
 - Wait a few minutes (GitHub Pages caching)
 - Clear browser cache
 - Check GitHub Actions completed successfully
 
 ### 404 on Page Refresh
+
 **Issue**: Direct navigation to `/about` or `/products` returns 404
 
 **Solution**: Use Hash Router (see React Router section above)
@@ -201,6 +223,7 @@ pnpm run lint
 ## 🔄 Updating Your Site
 
 ### With GitHub Actions (Automatic)
+
 1. Make your changes locally
 2. Commit and push:
    ```bash
@@ -211,6 +234,7 @@ pnpm run lint
 3. GitHub Actions will automatically build and deploy
 
 ### Manual Deployment
+
 1. Make your changes locally
 2. Run deployment:
    ```bash
@@ -244,12 +268,14 @@ Before deploying to production:
 Once your site is live:
 
 1. **Test thoroughly**
+
    - Visit all pages
    - Click all links
    - Test on mobile device
    - Try the contact form
 
 2. **Share your site**
+
    - Add the URL to your GitHub repo description
    - Share on social media
    - Add to your business cards
