@@ -31,9 +31,11 @@ const Navbar = () => {
               whileHover={{ scale: 1.05 }}
               className="flex items-center space-x-2"
             >
-              <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
+              <img
+                src={`${import.meta.env.BASE_URL}logo.png`}
+                alt="StrawTech Logo"
+                className="h-10 w-auto"
+              />
               <span className="text-2xl font-bold text-green-600">
                 StrawTech
               </span>

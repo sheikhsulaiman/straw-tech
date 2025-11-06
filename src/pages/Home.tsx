@@ -102,7 +102,7 @@ const Home = () => {
             >
               <div className="relative w-full h-[500px] bg-gray-300 rounded-2xl overflow-hidden shadow-2xl">
                 <img
-                  src="/placeholder-hero.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-hero.png`}
                   alt="Rice straw products displayed in natural environment"
                   className="w-full h-full object-cover"
                 />
@@ -216,7 +216,7 @@ const Home = () => {
             >
               <div className="relative w-full h-[400px] bg-white/10 rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder-impact.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-impact.png`}
                   alt="Environmental impact of rice straw products"
                   className="w-full h-full object-cover"
                 />
@@ -238,7 +238,7 @@ const Home = () => {
             >
               <div className="relative w-full h-[400px] bg-gray-300 rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder-ad-space.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-ad-space.png`}
                   alt="Products with brand advertisements printed on them"
                   className="w-full h-full object-cover"
                 />

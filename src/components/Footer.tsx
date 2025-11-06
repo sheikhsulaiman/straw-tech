@@ -45,9 +45,6 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
               <span className="text-2xl font-bold">StrawTech</span>
             </div>
             <p className="text-gray-400 mb-4">

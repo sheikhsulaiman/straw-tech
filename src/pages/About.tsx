@@ -11,28 +11,28 @@ const About = () => {
 
   const team = [
     {
-      name: "John Doe",
+      name: "Jalal Uddin",
       role: "Founder & CEO",
-      image: "/placeholder-team-1.png",
-      alt: "John Doe - Founder and CEO portrait",
+      image: `${import.meta.env.BASE_URL}placeholder-team-1.jpg`,
+      alt: "Jalal Uddin - Founder and CEO portrait",
     },
     {
-      name: "Jane Smith",
+      name: "Sheikh Sulaiman",
       role: "Head of Operations",
-      image: "/placeholder-team-2.png",
-      alt: "Jane Smith - Head of Operations portrait",
+      image: `${import.meta.env.BASE_URL}placeholder-team-2.jpg`,
+      alt: "Sheikh Sulaiman - Head of Operations portrait",
     },
     {
-      name: "Mike Johnson",
+      name: "Siyam Ul Alam",
       role: "Chief Innovation Officer",
-      image: "/placeholder-team-3.png",
-      alt: "Mike Johnson - Chief Innovation Officer portrait",
+      image: `${import.meta.env.BASE_URL}placeholder-team-3.jpg`,
+      alt: "Siyam Ul Alam - Chief Innovation Officer portrait",
     },
     {
-      name: "Sarah Williams",
+      name: "Nashsha Islam",
       role: "Sustainability Director",
-      image: "/placeholder-team-4.png",
-      alt: "Sarah Williams - Sustainability Director portrait",
+      image: `${import.meta.env.BASE_URL}placeholder-team-4.jpg`,
+      alt: "Nashsha Islam - Sustainability Director portrait",
     },
   ];
 
@@ -99,7 +99,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] bg-white/10 rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder-mission.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-mission.png`}
                   alt="Rice straw being processed into eco-friendly materials"
                   className="w-full h-full object-cover"
                 />
@@ -176,7 +176,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder-vision.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-vision.png`}
                   alt="Future vision of sustainable manufacturing facilities"
                   className="w-full h-full object-cover"
                 />

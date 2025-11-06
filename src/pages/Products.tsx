@@ -39,7 +39,7 @@ const Products = () => {
       name: "Eco Plates Set",
       category: "Food Packaging",
       price: "FREE",
-      image: "/placeholder-product-1.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-1.png`,
       alt: "Set of biodegradable plates made from rice straw with brand advertising",
       description:
         "Sturdy and biodegradable plates perfect for any occasion. 100% FREE!",
@@ -48,7 +48,7 @@ const Products = () => {
       name: "Straw Shopping Bags",
       category: "Shopping Bags",
       price: "FREE",
-      image: "/placeholder-product-2.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-2.png`,
       alt: "Reusable shopping bags made from processed rice straw with brand advertising",
       description:
         "Durable shopping bags that last for years. Completely FREE!",
@@ -57,7 +57,7 @@ const Products = () => {
       name: "Food Containers",
       category: "Food Packaging",
       price: "FREE",
-      image: "/placeholder-product-3.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-3.png`,
       alt: "Eco-friendly food storage containers from rice straw with brand advertising",
       description:
         "Keep your food fresh in eco-friendly containers. No cost to you!",
@@ -66,7 +66,7 @@ const Products = () => {
       name: "Cutlery Set",
       category: "Food Packaging",
       price: "FREE",
-      image: "/placeholder-product-4.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-4.png`,
       alt: "Biodegradable cutlery set including spoon, fork, and knife with brand advertising",
       description:
         "Complete cutlery set made from rice straw fibers. Totally FREE!",
@@ -75,7 +75,7 @@ const Products = () => {
       name: "Packaging Box",
       category: "Packaging Materials",
       price: "FREE",
-      image: "/placeholder-product-5.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-5.png`,
       alt: "Sturdy packaging box made from compressed rice straw with brand advertising",
       description:
         "Professional packaging for your business needs. Absolutely FREE!",
@@ -84,7 +84,7 @@ const Products = () => {
       name: "Home Storage Bins",
       category: "Home Products",
       price: "FREE",
-      image: "/placeholder-product-6.png",
+      image: `${import.meta.env.BASE_URL}placeholder-product-6.png`,
       alt: "Decorative storage bins crafted from natural rice straw",
       description: "Stylish storage solutions for your home.",
     },
@@ -286,7 +286,7 @@ const Products = () => {
             >
               <div className="relative w-full h-[500px] bg-gray-300 rounded-2xl overflow-hidden shadow-xl">
                 <img
-                  src="/placeholder-why-choose.png"
+                  src={`${import.meta.env.BASE_URL}placeholder-why-choose.png`}
                   alt="Rice straw products showcasing quality and sustainability"
                   className="w-full h-full object-cover"
                 />
