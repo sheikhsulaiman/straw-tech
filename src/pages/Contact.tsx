@@ -197,11 +197,12 @@ const Contact = () => {
                     >
                       <option value="">Select a subject</option>
                       <option value="general">General Inquiry</option>
-                      <option value="product">Product Information</option>
-                      <option value="bulk">Bulk Order</option>
-                      <option value="partnership">
-                        Partnership Opportunity
+                      <option value="product">Free Product Request</option>
+                      <option value="advertising">
+                        Advertising Partnership
                       </option>
+                      <option value="bulk">Bulk Distribution</option>
+                      <option value="partnership">Business Partnership</option>
                       <option value="support">Customer Support</option>
                     </select>
                   </div>
@@ -276,26 +277,26 @@ const Contact = () => {
                       <span className="text-xs">✓</span>
                     </div>
                     <span>
-                      Get expert advice on choosing the right products
+                      Request FREE eco-friendly products for your needs
                     </span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full shrink-0 flex items-center justify-center mt-0.5">
                       <span className="text-xs">✓</span>
                     </div>
-                    <span>Discuss bulk ordering and custom solutions</span>
+                    <span>Advertise your brand on sustainable products</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full shrink-0 flex items-center justify-center mt-0.5">
                       <span className="text-xs">✓</span>
                     </div>
-                    <span>Explore partnership opportunities</span>
+                    <span>Discuss bulk distribution partnerships</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <div className="w-6 h-6 bg-green-500 rounded-full shrink-0 flex items-center justify-center mt-0.5">
                       <span className="text-xs">✓</span>
                     </div>
-                    <span>Learn about our sustainability initiatives</span>
+                    <span>Learn about our advertising opportunities</span>
                   </li>
                 </ul>
 

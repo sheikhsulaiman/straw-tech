@@ -1,7 +1,16 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import { Leaf, Recycle, Globe, ArrowRight, CheckCircle2 } from "lucide-react";
+import {
+  Leaf,
+  Recycle,
+  Globe,
+  ArrowRight,
+  CheckCircle2,
+  TrendingUp,
+  Megaphone,
+  Users,
+} from "lucide-react";
 
 const Home = () => {
   const features = [
@@ -19,9 +28,9 @@ const Home = () => {
     },
     {
       icon: Globe,
-      title: "Carbon Neutral",
+      title: "Free for Everyone",
       description:
-        "Reducing carbon footprint by utilizing agricultural byproducts.",
+        "All products are FREE. We're funded by eco-conscious brand advertisements.",
     },
   ];
 
@@ -51,16 +60,17 @@ const Home = () => {
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="inline-block mb-4 px-4 py-2 bg-green-600 text-white rounded-full text-sm font-semibold"
               >
-                Eco-Friendly Innovation
+                100% FREE Products
               </motion.div>
               <h1 className="text-5xl md:text-7xl font-bold text-gray-900 mb-6">
-                From Rice Straw to
-                <span className="text-green-600"> Sustainable Future</span>
+                Free Eco-Friendly Products,
+                <span className="text-green-600"> Powered by Ads</span>
               </h1>
               <p className="text-xl text-gray-600 mb-8">
-                Transforming agricultural waste into eco-friendly alternatives
-                to plastic. Join us in building a cleaner, greener planet for
-                future generations.
+                Get 100% FREE sustainable rice straw products! We're
+                revolutionizing eco-friendly living by partnering with brands
+                who advertise on our products. Zero cost to you, zero harm to
+                the planet.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link to="/products">
@@ -211,6 +221,99 @@ const Home = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advertising Business Model Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="relative w-full h-[400px] bg-gray-300 rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="/placeholder-ad-space.jpg"
+                  alt="Products with brand advertisements printed on them"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Advertise on Sustainable Products
+              </h2>
+              <p className="text-xl text-gray-600 mb-6">
+                We make our products FREE by selling premium advertising space
+                to eco-conscious brands. Your brand message on biodegradable
+                products that reach thousands daily.
+              </p>
+
+              <div className="space-y-4 mb-8">
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                    <Megaphone className="text-green-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Premium Visibility
+                    </h3>
+                    <p className="text-gray-600">
+                      Your brand on everyday items like plates, bags, and
+                      containers seen by thousands.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                    <TrendingUp className="text-green-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Eco-Conscious Audience
+                    </h3>
+                    <p className="text-gray-600">
+                      Connect with environmentally aware consumers who value
+                      sustainable brands.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex items-start space-x-4">
+                  <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center shrink-0">
+                    <Users className="text-green-600" size={24} />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                      Support Free Distribution
+                    </h3>
+                    <p className="text-gray-600">
+                      Your advertising enables us to give away eco-friendly
+                      products at no cost.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  className="bg-green-600 hover:bg-green-700 text-lg"
+                >
+                  Advertise With Us
+                  <ArrowRight className="ml-2" size={20} />
+                </Button>
+              </Link>
             </motion.div>
           </div>
         </div>

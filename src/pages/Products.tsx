@@ -38,47 +38,52 @@ const Products = () => {
     {
       name: "Eco Plates Set",
       category: "Food Packaging",
-      price: "$24.99",
+      price: "FREE",
       image: "/placeholder-product-1.jpg",
-      alt: "Set of biodegradable plates made from rice straw",
-      description: "Sturdy and biodegradable plates perfect for any occasion.",
+      alt: "Set of biodegradable plates made from rice straw with brand advertising",
+      description:
+        "Sturdy and biodegradable plates perfect for any occasion. 100% FREE!",
     },
     {
       name: "Straw Shopping Bags",
       category: "Shopping Bags",
-      price: "$12.99",
+      price: "FREE",
       image: "/placeholder-product-2.jpg",
-      alt: "Reusable shopping bags made from processed rice straw",
-      description: "Durable shopping bags that last for years.",
+      alt: "Reusable shopping bags made from processed rice straw with brand advertising",
+      description:
+        "Durable shopping bags that last for years. Completely FREE!",
     },
     {
       name: "Food Containers",
       category: "Food Packaging",
-      price: "$18.99",
+      price: "FREE",
       image: "/placeholder-product-3.jpg",
-      alt: "Eco-friendly food storage containers from rice straw",
-      description: "Keep your food fresh in eco-friendly containers.",
+      alt: "Eco-friendly food storage containers from rice straw with brand advertising",
+      description:
+        "Keep your food fresh in eco-friendly containers. No cost to you!",
     },
     {
       name: "Cutlery Set",
       category: "Food Packaging",
-      price: "$15.99",
+      price: "FREE",
       image: "/placeholder-product-4.jpg",
-      alt: "Biodegradable cutlery set including spoon, fork, and knife",
-      description: "Complete cutlery set made from rice straw fibers.",
+      alt: "Biodegradable cutlery set including spoon, fork, and knife with brand advertising",
+      description:
+        "Complete cutlery set made from rice straw fibers. Totally FREE!",
     },
     {
       name: "Packaging Box",
       category: "Packaging Materials",
-      price: "$29.99",
+      price: "FREE",
       image: "/placeholder-product-5.jpg",
-      alt: "Sturdy packaging box made from compressed rice straw",
-      description: "Professional packaging for your business needs.",
+      alt: "Sturdy packaging box made from compressed rice straw with brand advertising",
+      description:
+        "Professional packaging for your business needs. Absolutely FREE!",
     },
     {
       name: "Home Storage Bins",
       category: "Home Products",
-      price: "$34.99",
+      price: "FREE",
       image: "/placeholder-product-6.jpg",
       alt: "Decorative storage bins crafted from natural rice straw",
       description: "Stylish storage solutions for your home.",
@@ -97,12 +102,16 @@ const Products = () => {
             className="text-center max-w-4xl mx-auto"
           >
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Our <span className="text-green-600">Products</span>
+              100% FREE <span className="text-green-600">Products</span>
             </h1>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              Discover our range of eco-friendly products made from rice straw.
-              Every purchase helps reduce plastic waste and support local
-              farmers.
+            <p className="text-xl text-gray-600 leading-relaxed mb-4">
+              All our eco-friendly rice straw products are completely FREE!
+              We're funded by advertising partnerships with eco-conscious
+              brands. Get sustainable products at zero cost while supporting the
+              environment.
+            </p>
+            <p className="text-lg text-green-600 font-semibold">
+              No hidden fees • Free shipping • Advertisement-supported
             </p>
           </motion.div>
         </div>
@@ -298,11 +307,12 @@ const Products = () => {
             className="text-center text-white max-w-3xl mx-auto"
           >
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Ready to Go Green?
+              Get FREE Products or Advertise With Us
             </h2>
             <p className="text-xl text-green-50 mb-8">
-              Contact us for bulk orders, custom products, or partnership
-              opportunities.
+              Want free eco-friendly products? Or interested in advertising your
+              brand on sustainable products? Contact us for bulk orders,
+              advertising partnerships, or distribution inquiries.
             </p>
             <Link to="/contact">
               <Button

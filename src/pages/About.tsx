@@ -118,15 +118,18 @@ const About = () => {
                 <h2 className="text-4xl font-bold">Our Mission</h2>
               </div>
               <p className="text-xl text-green-50 leading-relaxed mb-6">
-                To create a sustainable future by converting agricultural waste
-                into valuable, eco-friendly products that replace harmful
-                plastics and support local farming communities.
+                To make eco-friendly products accessible to everyone at ZERO
+                cost by partnering with brands for advertising. We're
+                revolutionizing sustainability by removing financial barriers
+                while converting agricultural waste into valuable products that
+                replace harmful plastics.
               </p>
               <p className="text-lg text-green-100 leading-relaxed">
                 Every year, millions of tons of rice straw are burned,
-                contributing to air pollution and climate change. We saw an
-                opportunity to turn this problem into a solution by creating
-                biodegradable alternatives to plastic products.
+                contributing to air pollution and climate change. We transformed
+                this problem into a triple-win solution: free sustainable
+                products for consumers, advertising opportunities for brands,
+                and support for local farming communities.
               </p>
             </motion.div>
           </div>
@@ -149,15 +152,18 @@ const About = () => {
                 <h2 className="text-4xl font-bold text-gray-900">Our Vision</h2>
               </div>
               <p className="text-xl text-gray-600 leading-relaxed mb-6">
-                To be the global leader in sustainable agricultural waste
-                transformation, inspiring a world where waste becomes wealth and
-                environmental responsibility is the norm, not the exception.
+                To be the global leader in free, advertisement-supported
+                sustainable products, inspiring a world where eco-friendly
+                choices are accessible to everyone regardless of economic
+                status. We're proving that environmental responsibility and
+                innovative business models can coexist.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                We envision a future where every product we create contributes
-                to a cleaner planet, supports local economies, and proves that
-                sustainable business practices can be both profitable and
-                purposeful.
+                We envision a future where sustainable products are the default,
+                not the premium choice. By leveraging advertising partnerships,
+                we're making eco-friendly living financially accessible while
+                creating new marketing opportunities for brands that share our
+                values.
               </p>
             </motion.div>
 
