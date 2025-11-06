@@ -13,25 +13,25 @@ const About = () => {
     {
       name: "John Doe",
       role: "Founder & CEO",
-      image: "/placeholder-team-1.jpg",
+      image: "/placeholder-team-1.png",
       alt: "John Doe - Founder and CEO portrait",
     },
     {
       name: "Jane Smith",
       role: "Head of Operations",
-      image: "/placeholder-team-2.jpg",
+      image: "/placeholder-team-2.png",
       alt: "Jane Smith - Head of Operations portrait",
     },
     {
       name: "Mike Johnson",
       role: "Chief Innovation Officer",
-      image: "/placeholder-team-3.jpg",
+      image: "/placeholder-team-3.png",
       alt: "Mike Johnson - Chief Innovation Officer portrait",
     },
     {
       name: "Sarah Williams",
       role: "Sustainability Director",
-      image: "/placeholder-team-4.jpg",
+      image: "/placeholder-team-4.png",
       alt: "Sarah Williams - Sustainability Director portrait",
     },
   ];
@@ -99,7 +99,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] bg-white/10 rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder-mission.jpg"
+                  src="/placeholder-mission.png"
                   alt="Rice straw being processed into eco-friendly materials"
                   className="w-full h-full object-cover"
                 />
@@ -176,7 +176,7 @@ const About = () => {
             >
               <div className="relative w-full h-[400px] bg-gray-200 rounded-2xl overflow-hidden">
                 <img
-                  src="/placeholder-vision.jpg"
+                  src="/placeholder-vision.png"
                   alt="Future vision of sustainable manufacturing facilities"
                   className="w-full h-full object-cover"
                 />

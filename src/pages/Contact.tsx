@@ -250,7 +250,7 @@ const Contact = () => {
               <div className="bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div className="relative w-full h-[400px] bg-gray-300">
                   <img
-                    src="/placeholder-map.jpg"
+                    src="/placeholder-map.png"
                     alt="Map showing StrawTech office location"
                     className="w-full h-full object-cover"
                   />
